@@ -2,6 +2,8 @@
 
 It is a home takeaway project for the carbon cell with bellow requirements
 
+[![Live Link](https://img.shields.io/badge/Live%20Link-Click%20Here-blue)](https://carbon-cell-takeaway.onrender.com/)
+
 ## Task 1: Create a Side Navigation Bar
 - Objective: Implement a side navigation bar similar to the one highlighted in the provided image.
 - Requirements:

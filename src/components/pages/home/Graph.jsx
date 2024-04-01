@@ -12,6 +12,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import { chartOptions } from '../../../lib/data/data';
 import useFetch from '../../../lib/hooks/useFetch';
+import Loader from '../../shared/Loader';
 
 
 const Graph = () => {
@@ -40,9 +41,13 @@ const Graph = () => {
     };
     return (
         <div className="graph">
-            <div className="container">
-                <Line data={data} options={chartOptions} />
-            </div>
+            {
+                loading ? <Loader style={{height: "70vh"}} /> : error ? <h1>{error}</h1> : <>
+                    <div className="container">
+                        <Line data={data} options={chartOptions} />
+                    </div>
+                </>
+            }
         </div>
     );
 };

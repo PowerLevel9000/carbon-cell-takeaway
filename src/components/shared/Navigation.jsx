@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/image.png';
 import { navigationLinks as links } from '../../lib/data/data';
+import useWindowSize from '../../lib/hooks/useWindowSize';
 
 const Navigation = () => {
   const location = useLocation();
   const [isActive, setIsActive] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    }
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [])
+  const {isMobile} = useWindowSize();
 
   return (
     <header>

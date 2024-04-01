@@ -28,7 +28,7 @@ const useFetch = (url, component = 'this Component') => {
 
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [fetchData]);
 
     return { data, error, loading };
 }

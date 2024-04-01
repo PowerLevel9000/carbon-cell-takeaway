@@ -7,6 +7,10 @@ const Home = () => {
   const { data, error, loading } = useFetch('https://jsonplaceholder.typicode.com/posts', 'Home Component');
   return (
     <div className='content-page'>
+      <div className="hero-header">
+        <h1 className="hero-text">Welcome <span>Hacker <i className="fa-brands fa-ello"></i></span></h1>
+        <button type="button">Button</button>
+      </div>
       <Graph />
       <CryptoCards />
     </div>

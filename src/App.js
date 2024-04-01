@@ -10,12 +10,14 @@ function App() {
   return (
     <div className="app">
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/organization" element={<Organization />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
+      <div style={{width: "100%"}}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/organization" element={<Organization />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      </div>
     </div>
   );
 }

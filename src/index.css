@@ -27,7 +27,7 @@ a {
   --white: #fff;
   --light-black: #333;
   --light-gray: #625e5e;
-  --green: #00ff00;
+  --green: #00ff00dd;
   --green-shade: #19a819;
 }
 /* Set default font family and size */
@@ -142,7 +142,6 @@ body {
 .content-page {
   flex: 1;
   padding: 20px;
-  height: 200vh;
   margin-left: 250px;
 }
 
@@ -184,6 +183,94 @@ body {
   gap: 10px;
   padding: 2px;
   border-radius: 0 10px 10px 0;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero-header h1 {
+  font-size: 2.5rem;
+}
+
+.hero-header span {
+  color: var(--green-shade);
+}
+
+.hero-header button {
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.graph {
+  width: 80%;
+  margin: auto auto;
+  background-color: var(--light-black);
+  padding: 20px;
+  border-radius: 1rem;
+  overflow-x: scroll;
+}
+
+.graph .container {
+  width: 100%;
+  min-width: 800px;
+}
+
+.graph::-webkit-scrollbar {
+  width: 5px;
+  visibility: hidden;
+}
+
+.card-container {
+  display: flex;
+  width: 80%;
+  margin: auto auto;
+  margin-top: 3rem;
+  gap: 20px;
+}
+
+.card-container .card {
+  width: 200px;
+  background-color: var(--light-gray);
+  padding: 16px 0;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-container h1 {
+  font-size: 1rem;
+  background-color: greenyellow;
+  color: var(--black);
+  padding: 2px 10px;
+}
+
+.card-container .list {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 2px 10px;
+}
+
+.card-container h2 {
+  text-align: left;
+  padding: 2px 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  height: 5vh;
+  background-color: var(--green-shade)
 }
 
 /* Media Queries */

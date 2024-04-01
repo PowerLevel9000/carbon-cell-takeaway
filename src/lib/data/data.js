@@ -4,3 +4,16 @@ export const navigationLinks = [
     { name: 'Organization', path: '/organization', icon: 'fa fa-industry' },
     { name: 'Services', path: '/services', icon: 'fa fa-cog' }
 ];
+
+export const chartOptions = {
+    responsive: true,
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Population Data',
+        },
+    },
+};

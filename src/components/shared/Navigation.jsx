@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/image.png';
+import { navigationLinks as links } from '../../lib/data/data';
 
 const Navigation = () => {
   const location = useLocation();
-  console.log(location.pathname ?? 'yes');
   const [isActive, setIsActive] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -20,13 +20,6 @@ const Navigation = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [])
-
-  const links = [
-    { name: 'Home', path: '/', icon: 'fa fa-home' },
-    { name: 'Contact', path: '/contact', icon: 'fa fa-phone' },
-    { name: 'Organization', path: '/organization', icon: 'fa fa-industry' },
-    { name: 'Services', path: '/services', icon: 'fa fa-cog' }
-  ];
 
   return (
     <header>
@@ -62,7 +55,7 @@ const Navigation = () => {
           <nav>
             <ul>
               {links.map((link, index) => (
-                <li key={index} className={location.pathname === link.path ? 'active' : ''}>
+                <li key={index} className={location.pathname === link.path ? 'link-active' : ''}>
                   <Link
                     to={link.path}
                     onClick={() => isMobile && setIsActive(false)}

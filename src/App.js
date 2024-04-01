@@ -9,11 +9,8 @@ import Navigation from './components/shared/Navigation';
 function App() {
   return (
     <div className="app">
-      <div className='sidebar'>
-        <h1>React App</h1>
-        <Navigation />
-      </div>
-      <Routes className="content-page">
+      <Navigation />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/organization" element={<Organization />} />

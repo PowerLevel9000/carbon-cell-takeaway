@@ -2,7 +2,7 @@ import React from 'react'
 
 const Organization = () => {
   return (
-    <div>Organization</div>
+    <main className="content-page">Organization</main>
   )
 }
 

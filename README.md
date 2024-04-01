@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Carbon_Cell_Takeaway
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a home takeaway project for the carbon cell with bellow requirements
 
-## Available Scripts
+[![Live Link](https://img.shields.io/badge/Live%20Link-Click%20Here-blue)](https://carbon-cell-takeaway.onrender.com/)
 
-In the project directory, you can run:
+## Task 1: Create a Side Navigation Bar
+- Objective: Implement a side navigation bar similar to the one highlighted in the provided image.
+- Requirements:
+	- [ ] The navigation bar should be responsive and collapse into a hamburger menu on smaller screens.
+	- [ ] Include at least three navigation items.
+  - [ ] Highlight the active navigation item.
+- Evaluation Criteria:
+	- [ ] Correct implementation of the navigation bar layout.
+	- [ ] Responsiveness on different screen sizes.
+	- [ ] Proper highlighting of active navigation items.
 
-### `npm start`
+## Task 2: Graph Population Data
+- Objective: Fetch population data from the provided API (https://datausa.io/api/data?drilldowns=Nation&measures=Population) and create a graph.
+- Requirements:
+	- [ ] Utilize React JS and any relevant libraries (e.g., Chart.js) to create the graph.
+	- [ ] Display the population data for different nations.
+Provide appropriate labels, legends, and axis titles for the graph.
+- Evaluation Criteria:
+	- [ ] Successful retrieval and display of population data.
+	- [ ] Accuracy and clarity of the graph representation.
+	- [ ] Proper labeling and styling of the graph components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Task 3: Display Cryptocurrency Prices
+- Objective: Fetch cryptocurrency prices from the provided API (https://api.coindesk.com/v1/bpi/currentprice.json) and display them in cards.
+- Requirements:
+  - [ ] Fetch data asynchronously using React's lifecycle methods or hooks.
+	- [ ] Display prices of Bitcoin in multiple currencies (e.g., USD and Euro).
+	- [ ] Design visually appealing cards to showcase the cryptocurrency prices.
+- Evaluation Criteria:
+	- [ ] Proper integration and retrieval of cryptocurrency prices.
+	- [ ] Clear presentation of prices in the card format.
+	- [ ] Visual appeal and consistency in card design.
